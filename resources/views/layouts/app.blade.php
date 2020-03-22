@@ -11,8 +11,16 @@
         @include('inc.navbar')
         <div class="container">
             <main class="py-4">
+                @include('inc.messages')
                 @yield('content')
             </main>
         </div>
+        <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+        <script>
+            var elementExists = document.getElementById("article-ckeditor");
+            if (elementExists) {
+                CKEDITOR.replace('article-ckeditor');
+            }
+        </script>
     </body>
 </html>

@@ -8,7 +8,7 @@
                     <div class="col-md-8 col-sm-8">
                         <div class="card-body">
                             <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                            <small>Written on {{$post->created_at}}</small>
+                            <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
                         </div>
                     </div>
                 </div>

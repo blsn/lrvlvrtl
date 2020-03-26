@@ -17,6 +17,15 @@
             "program": "${file}",
             "cwd": "${fileDirname}",
             "port": 9000
-        }
+        },
+        {
+            "name": "Listen for XDebug on Homestead",
+            "type": "php",
+            "request": "launch",
+            "pathMappings": {
+                "/home/vagrant/code/lrvlvrtl": "c:/localdev/lrvlvrtl"
+            },
+            "port": 9000
+        }        
     ]
 }

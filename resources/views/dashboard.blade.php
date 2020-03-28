@@ -16,9 +16,9 @@
                     @if (count($posts) > 0)
                         <table class="table table-striped">
                             <tr>
-                                <th>Title</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <th class="col-6">Title</th>
+                                <th class="col-3">Edit</th>
+                                <th class="col-3">Delete</th>
                             </tr>
                             @foreach ($posts as $post)
                                 <tr>
